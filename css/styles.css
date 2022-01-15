@@ -611,6 +611,72 @@ img {
   fill: currentColor;
 }
 
+.footer-social-network {
+  margin-right: 93px;
+}
+
+/* Форма розсилки */
+
+.join-section {
+  display: inline-block;
+}
+
+.join-section-title {
+  margin-bottom: 20px;
+  width: 219px;
+  height: 16px;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--white-text-color);
+}
+
+.join-input {
+  display: inline-block;
+  padding: 15px 16px;
+  width: 350px;
+  height: 50px;
+  margin-right: 12px;
+  background-color: #2f303a;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+}
+
+.join-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 50px;
+  background-color: var(--accent-color);
+  color: var(--primary-bg-color);
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+  border: none;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  transition: background-color 250ms var(--timing-funcion), box-shadow 250ms var(--timing-funcion);
+}
+
+.join-button:hover,
+.join-button:focus {
+  background-color: #188ce8;
+  color: var(--white-text-color);
+}
+
+.logo-join-section {
+  fill: #fff;
+}
+
 /*Стили файла portfolio.html */
 /* Портфолио наших раобот */
 
