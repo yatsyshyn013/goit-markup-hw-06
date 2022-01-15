@@ -61,6 +61,39 @@
                 <use href="./images/symbol-defs.svg#icon-close"></use>
             </svg>
         </button>
+
+        <form class="modal-form">
+            <b class="modal-from-title">Оставьте свои данные, мы вам перезвоним</b>
+
+            <div role="group" class="group-form">
+                <label class="modal-form-label"> <span class="label-text">Имя</span> 
+                    <input class="modal-input" type="text">
+                </label>
+
+                <label class="modal-form-label"><span class="label-text">Телефон</span>
+                    <input class="modal-input" type="tel">
+                </label>
+
+                <label class="modal-form-label"><span class="label-text">Почта</span>
+                    <input class="modal-input" type="email">
+                </label>
+
+                <label class="modal-textarea-label"><span class="label-text">Комментарий</span>
+                    <textarea class="modal-textarea" cols="30" rows="10" placeholder="Введите текст"></textarea>
+                </label>
+
+                
+            </div>
+
+            <div role="group" class="group-checkbox">
+                <input class="" type="checkbox" id="send-agree">
+                <label for="send-agree" class="modal-checkbox-label">Соглашаюсь с рассылкой и принимаю Условия договора</label>
+            </div>
+
+            <button class="hero-button" type="submit">Отправить</button>
+
+        </form>
+
     </div>
 </div>
 
@@ -392,13 +425,14 @@
             <p class="join-section-title">Подпишитесь на рассылку</p>
             <label class="join-section-label">
             <input class="join-input" type="email" placeholder="E-mail">
+                <button type="button" class="join-button" data-modal-open>
+                    Подписаться
+                    <svg class="logo-join-section" width="24px" height="24px">
+                        <use href="./images/symbol-defs.svg#icon-send"></use>
+                    </svg>
+                </button>
             </label>
-            <button type="button" class="join-button" data-modal-open>
-                Подписаться
-                <svg class="logo-join-section" width="24px" height="24px">
-                    <use href="./images/symbol-defs.svg#icon-send"></use>
-                </svg>
-            </button>
+            
         </div>
 
     </div>
