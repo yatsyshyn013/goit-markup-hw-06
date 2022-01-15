@@ -67,27 +67,39 @@
 
             <div role="group" class="group-form">
                 <label class="modal-form-label"> <span class="label-text">Имя</span> 
-                    <input class="modal-input" type="text">
+                    <input class="modal-input" type="text" name="name">
+                    <svg class="logo-form" width="18px" height="18px">
+                        <use href="./images/symbol-defs.svg#icon-person-form"></use>
+                    </svg>
                 </label>
 
                 <label class="modal-form-label"><span class="label-text">Телефон</span>
-                    <input class="modal-input" type="tel">
+                    <input class="modal-input" type="tel" name="tel">
+                    <svg class="logo-form" width="18px" height="18px">
+                        <use href="./images/symbol-defs.svg#icon-phone-form"></use>
+                    </svg>
                 </label>
 
                 <label class="modal-form-label"><span class="label-text">Почта</span>
-                    <input class="modal-input" type="email">
+                    <input class="modal-input" type="email" name="email">
+                    <svg class="logo-form" width="18px" height="18px">
+                        <use href="./images/symbol-defs.svg#icon-email-form"></use>
+                    </svg>
                 </label>
 
                 <label class="modal-textarea-label"><span class="label-text">Комментарий</span>
-                    <textarea class="modal-textarea" cols="30" rows="10" placeholder="Введите текст"></textarea>
+                    <textarea class="modal-textarea" cols="30" rows="10" name="comments" placeholder="Введите текст"></textarea>
                 </label>
-
-                
             </div>
 
             <div role="group" class="group-checkbox">
-                <input class="" type="checkbox" id="send-agree">
-                <label for="send-agree" class="modal-checkbox-label">Соглашаюсь с рассылкой и принимаю Условия договора</label>
+                <label for="send-agree" class="modal-checkbox-label">
+                    <input name="send-agree" class="checkbox-input" type="checkbox" id="send-agree">
+                    <svg class="icon-checkbox" width="16px" height="15px">
+                        <use href="./images/symbol-defs.svg#icon-checkbox"></use>
+                    </svg>
+                    <span class="checkbox-text">Соглашаюсь с рассылкой и принимаю <a class="agreement-link" href="">Условия договора</a></span>
+                </label>
             </div>
 
             <button class="hero-button" type="submit">Отправить</button>
