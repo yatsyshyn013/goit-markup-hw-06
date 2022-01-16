@@ -244,19 +244,20 @@
             </ul>
         </div>
 
-        <div class="join-section">
+        <form class="join-section js-speaker-form">
             <p class="join-section-title">Подпишитесь на рассылку</p>
-            <label class="join-section-label">
-                <input class="join-input" type="email" placeholder="E-mail">
-                <button type="button" class="join-button" data-modal-open>
+            <div class="join-container">
+                <label class="join-section-label">
+                    <input class="join-input" type="email" name="email" placeholder="E-mail">
+                </label>
+                <button type="submit" class="join-button" data-modal-open>
                     Подписаться
                     <svg class="logo-join-section" width="24px" height="24px">
                         <use href="./images/symbol-defs.svg#icon-send"></use>
                     </svg>
                 </button>
-            </label>
-        
-        </div>
+            </div>
+        </form>
 
     </div>
 </footer>

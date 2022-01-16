@@ -776,9 +776,7 @@ img {
 
 .join-section-title {
   margin-bottom: 20px;
-  width: 219px;
-  height: 16px;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
@@ -836,6 +834,11 @@ img {
   line-height: 1.25;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
+}
+
+.join-container {
+  display: flex;
+  flex-direction: row;
 }
 
 /*Стили файла portfolio.html */
