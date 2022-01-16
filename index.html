@@ -62,7 +62,7 @@
             </svg>
         </button>
 
-        <form class="modal-form">
+        <form class="modal-form js-speaker-form">
             <b class="modal-from-title">Оставьте свои данные, мы вам перезвоним</b>
 
             <div role="group" class="group-form">
@@ -436,7 +436,7 @@
         <div class="join-section">
             <p class="join-section-title">Подпишитесь на рассылку</p>
             <label class="join-section-label">
-            <input class="join-input" type="email" placeholder="E-mail">
+            <input class="join-input" type="email" name="email" placeholder="E-mail">
                 <button type="button" class="join-button" data-modal-open>
                     Подписаться
                     <svg class="logo-join-section" width="24px" height="24px">
@@ -453,6 +453,22 @@
 
 
 <script src="./js/modal.js"></script>
+
+<script>
+    (() => {
+        document
+            .querySelector('.js-speaker-form')
+            .addEventListener('submit', e => {
+                e.preventDefault();
+
+                new FormData(e.currentTarget).forEach((value, name) =>
+                    console.log(`${name}: ${value}`),
+                );
+
+                e.currentTarget.reset();
+            });
+    })();
+</script>
 
 </body>
 </html>
